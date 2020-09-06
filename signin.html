@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fish Fins</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" type="=/image/png" href="Image/logo-fish.png">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/Image/CSS/all.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<style>
+    .login_container {
+        margin-top: 150px;
+        margin-bottom: 80px;
+        width: 66.66%;
+        margin-left: 16.66%;
+    }
+    .dd-cl{
+    margin-bottom: .5rem;
+    margin-left: 0;
+    }
+    .contact-list{
+        padding: 10px;
+        float: left;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .footr-border{
+        margin-top: 15px;
+        border-top: 1px solid #b6b6b6;
+    }
+
+    .div-signup {
+        display: none;
+    }
+
+    .sub-btn {
+        background-color: #d62d20;
+        border: 0;
+    }
+
+    .can-btn {
+        background-color: #909090;
+        border: 0;
+    }
+
+    .login_container_left {
+        padding: 25px;
+        background-color: #d62d20;
+
+        border-radius: 10px 0 0 10px;
+        box-shadow: 0 0 3px 0 rgba(128, 128, 128, .2);
+    }
+
+    .login_container_right {
+        padding: 25px;
+        background: #f9f9f9f5;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 0 0 3px 0 rgba(187, 187, 187, .2);
+    }
+
+    .login-icon {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .login-icon img {
+        width: 50%;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+    h4 {
+        font-size: 13px;
+        text-align: center;
+        color: white;
+    }
+
+    .signup-login-btn {
+        text-align: center;
+    }
+
+    .signup-login-span {
+        padding: 5px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .selected-span {
+        padding: 5px;
+        border-bottom: 2px solid rgba(0, 0, 0, .87);
+        cursor: pointer;
+    }
+
+    /*  @media (min-width: 576px) .col-sm-12 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                        }*/
+
+    .div-login {
+        padding-top: 25px;
+    }
+
+    .btn-full-length {
+        width: 100%;
+        color: #fff;
+        background-color: #d62d20;
+        border: 0;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .forgot-psw-span {
+        cursor: pointer;
+        color: rgba(113, 113, 113, .671);
+        float: right;
+        font-weight: 600;
+        display: flex;
+    }
+
+    .otherLogin {
+        font-weight: 600;
+    }
+
+    .social-inner {
+        width: 30px;
+        margin: 0 10px;
+        color: #989898;
+        cursor: pointer;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .text-center-break {
+        text-align: center;
+        padding: 10px;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    .social-inner img {
+        width: 30px;
+        padding: 2px;
+    }
+</style>
+
+<body>
+
+    <header>
+
+
+
+        <div class="whatsapp">
+
+            <!-- <p>We Take Orders Through Whatsapp  <i class="fas fa-mobile-alt"></i></p> -->
+
+        </div>
+        <div class="deliver">
+
+            <p>We Deliver In 120Mins <i class="fa fa-truck" aria-hidden="true"></i></p>
+
+    </header>
+    <div class="logocontainer">
+        <a class="signin" href="signin.html">SIGN IN</a>
+    </div>
+    <hr>
+    <main>
+
+        <div class="menus">
+            <nav>
+                <ul class="nav-links">
+
+                    <li><a class="nav-links" href="Index.html">Home</a></li>
+                    <!-- <li><a class="nav-links" href="Fresh.html">Fresh</a></li> -->
+                    <li><a class="nav-links" href="Seafood.html">Seafood</a></li>
+                    <li><a class="nav-links" href="About.html">About</a></li>
+                    <li><a class="nav-links" href="Contact.html">Contact</a></li>
+
+
+
+                </ul>
+
+
+            </nav>
+
+
+        </div>
+        <div id="div-login">
+            <div class="col-sm-12">
+                <div class="login_container">
+                    <div class="row">
+                        <div class="col-sm-4 login_container_left"><span>
+                                <div class="login-icon"><img src="Image/man.png"></div>
+                            </span>
+                            <h3> Let's get you setup </h3>
+                            <h4> It will take only a couple of minutes to explore more </h4>
+                            <div class="col-sm-12 signup-login-btn"><span class="signup-login-span"
+                                    onclick="onSignUp()">
+                                    SignUp </span><span class="selected-span" onclick="onLogin()">
+                                    Login </span></div>
+                        </div>
+                        <!---->
+                        <div class="col-sm-8 login_container_right">
+                            <form novalidate="">
+                                <div class="div-login">
+                                    <!---->
+                                    <div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-8 offset-sm-2"><input
+                                                    class="form-control ng-untouched ng-pristine ng-invalid"
+                                                    formcontrolname="username" placeholder="Username (Email/Mobile)"
+                                                    type="text">
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-8 offset-sm-2"><input
+                                                    class="form-control ng-untouched ng-pristine ng-invalid"
+                                                    formcontrolname="password" placeholder="Password" type="password">
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-8 offset-sm-2"><input class="btn btn-md btn-full-length"
+                                                    type="button" value="Login">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <!---->
+                                    <div class="form-group row">
+                                        <!---->
+                                    </div>
+                                    <!---->
+                                    <!---->
+                                    <div class="form-group row">
+                                        <div class="col-sm-8 offset-sm-2">
+                                            <div class="col-sm-12"><span class="forgot-psw-span"> Forgot Password?
+                                                </span>
+                                            </div><br>
+                                            <div class="col-sm-12 text-center-break"><span class="otherLogin"> Or Login
+                                                    with
+                                                </span></div>
+                                            <div class="col-sm-12 text-center-break"><span class="social-inner"><img
+                                                        alt="" src="Image/sms.png">Send OTP</span>
+                                                <span class="social-inner" style="display: none;"><img alt=""
+                                                        src="Image/gmail.png">Gmail</span>
+                                                <span class="social-inner"><img alt=""
+                                                        src="Image/icons8-facebook-f-filled-48.png">Facebook</span>
+                                                <!---->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-center-break"><span>By login,
+                                        you agree to the <a href="/privacy">terms and conditions</a> of
+                                        the Fish Fins.</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-12 div-signup" id="div-signup">
+            <div class="login_container">
+                <div class="row">
+                    <div class="col-sm-4 login_container_left"><span>
+                            <div class="login-icon"><img src="Image/man.png"></div>
+                        </span>
+                        <h3> Let's get you setup </h3>
+                        <h4> It will take only a couple of minutes to explore more </h4>
+                        <div class="col-sm-12 signup-login-btn"><span onclick="onSignUp()" class="selected-span">
+                                SignUp </span><span onclick="onLogin()" class="signup-login-span">
+                                Login </span></div>
+                    </div>
+                    <!---->
+                    <div class="col-sm-8 login_container_right">
+                        <form novalidate="">
+                            <div class="div-login">
+                                <!---->
+                                <div>
+                                    <div class="form-group row">
+                                        <label class="control-label col-sm-3 col-md-4">First Name </label>
+                                        <div class="col-sm-6 offset-sm-0 col-md-7">
+                                            <input class="form-control ng-untouched ng-pristine ng-invalid"
+                                                formcontrolname="firstName" type="text">
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3 col-md-4">Last Name </label>
+                                    <div class="col-sm-6 offset-sm-0 col-md-7">
+                                        <input class="form-control ng-untouched ng-pristine ng-invalid"
+                                            formcontrolname="lastname" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3 col-md-4">Mobile</label>
+                                    <div class="col-sm-6 offset-sm-0 col-md-7">
+                                        <input class="form-control ng-untouched ng-pristine ng-invalid"
+                                            formcontrolname="mobile" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3 col-md-4">Email</label>
+                                    <div class="col-sm-6 offset-sm-0 col-md-7">
+                                        <input class="form-control ng-untouched ng-pristine ng-invalid"
+                                            formcontrolname="email" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3 col-md-4">Password</label>
+                                    <div class="col-sm-6 offset-sm-0 col-md-7">
+                                        <input class="form-control ng-untouched ng-pristine ng-invalid"
+                                            formcontrolname="firstName" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="control-label col-sm-3 col-md-4">Confirm Password</label>
+                                    <div class="col-sm-6 offset-sm-0 col-md-7">
+                                        <input class="form-control ng-untouched ng-pristine ng-invalid"
+                                            formcontrolname="firstName" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 col-md-7 offset-md-4 offset-sm-3">
+                                        <div class="col-sm-12 text-center-break"><input
+                                                class="btn btn-info btn-md cancel_btn can-btn" type="button"
+                                                value="Cancel">
+                                            <input class="btn btn-info btn-md submit_btn sub-btn" type="button"
+                                                value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <!---->
+                            <div class="form-group row">
+                                <!---->
+                            </div>
+                            <!---->
+                            <!---->
+
+                    </div>
+                    </form>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("div-login");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            } else {
+                                x.style.display = "none";
+                            }
+                            var y = document.getElementById("div-signup");
+                            if (y.style.display === "none") {
+                                y.style.display = "block";
+                            } else {
+                                y.style.display = "none";
+                            }
+                        }
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <div class="row footr-border">
+        <div  class="col-sm-10 offset-sm-1 pt-3">
+            <div  class="col-sm-4 contact-list">
+                <dt >Address:</dt>
+                <dd > 37-B XXXXXXXXX, YYYYYYYY, ZZZZZZZZ, Chennai - 600028 </dd>
+            </div>
+            <div  class="contact-list col-sm-4"><span  class="title"><img
+                         class="footer-logo-img" src="./Image/aquatic (1).png"></span>
+            </div>
+            <div  class="contact-list col-sm-4">
+                <dt >Contact:</dt>
+                <dd class="dd-cl"><i  class="material-icons md-18 lg-18">call</i><a 
+                        href="tel:044 42075803">044 1234567</a></dd>
+                <dd class="dd-cl"><i  class="material-icons md-18 lg-18">mail</i><a 
+                        href="email:support@hakuna.in">support@fishfins.in</a></dd>
+            </div>
+        </div>
+        
+    </div>
+
+    </main>
+    <script>
+        function onLogin() {
+            var x = document.getElementById("div-login");
+            var y = document.getElementById("div-signup");
+            x.style.display = "block";
+            y.style.display = "none";
+        }
+        function onSignUp() {
+            var x = document.getElementById("div-login");
+            var y = document.getElementById("div-signup");
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
